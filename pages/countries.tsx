@@ -25,7 +25,7 @@ const Index: NextPage = () => {
             <button>戻る</button>
           </Link>
           <br />
-          <img src={`/image/national flags/${name}.png`} alt="" />
+          <img src={`image/national flags/${name}.png`} alt="" />
           <p>
             名前：
             {json.countries.map((e) => e.name).indexOf(name) !== -1
