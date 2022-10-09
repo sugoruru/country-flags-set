@@ -2,14 +2,11 @@ import { NextPage } from "next";
 import Link from "next/link";
 import mainClass from "../styles/index.module.scss";
 import json from "../countries.json";
-import { useEffect, useState } from "react";
 import Admax from "./component/admax";
+import { useRouter } from "next/router";
 
 const Index: NextPage = () => {
-  const [name, setName] = useState("");
-  useEffect(() => {
-    setName(decodeURI(location.search.slice(1).split("=")[1]));
-  }, []);
+  const router = useRouter();
   return (
     <div>
       <div>
@@ -25,12 +22,22 @@ const Index: NextPage = () => {
             <button>戻る</button>
           </Link>
           <br />
-          <img src={`../image/national flags/${name}.png`} alt="" />
+          <img
+            src={`${
+              json.url === "localhost" ? "" : json.url
+            }/image/national flags/${router.query.name}.png`}
+            alt=""
+          />
           <p>
             名前：
-            {json.countries.map((e) => e.name).indexOf(name) !== -1
-              ? json.countries[json.countries.map((e) => e.name).indexOf(name)]
-                  .name
+            {json.countries
+              .map((e) => e.name)
+              .indexOf(String(router.query.name)) !== -1
+              ? json.countries[
+                  json.countries
+                    .map((e) => e.name)
+                    .indexOf(String(router.query.name))
+                ].name
               : "no"}
           </p>
         </div>

@@ -1,4 +1,11 @@
 {
+    "//": [
+        "url is",
+        "country-flags-set",
+        "or",
+        "localhost"
+    ],
+    "url": "country-flags-set",
     "countries": [
         {
             "name": "アイスランド共和国",

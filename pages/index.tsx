@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import mainClass from "../styles/index.module.scss";
 import Admax from "./component/admax";
+import json from "../countries.json";
 
 const Index: NextPage = () => {
   return (
@@ -18,7 +19,12 @@ const Index: NextPage = () => {
           <p className={mainClass.subtitle}>いろんな国の国旗を...</p>
           <hr style={{ background: "black" }} />
           <div className={mainClass.siteIntroduction}>
-            <img src="../image/globe.png" alt="" />
+            <img
+              src={`${
+                json.url === "localhost" ? "" : json.url
+              }/image/globe.png`}
+              alt=""
+            />
             <p>
               今、この世界には193か国あるそう...
               <br />
@@ -28,7 +34,12 @@ const Index: NextPage = () => {
             </p>
           </div>
           <div className={mainClass.searchExplanation}>
-            <img src="../image/search.png" alt="search" />
+            <img
+              src={`${
+                json.url === "localhost" ? "" : json.url
+              }/image/search.png`}
+              alt="search"
+            />
             <p>
               調べ方
               <br />
