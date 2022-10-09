@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import Link from "next/link";
 import mainClass from "../styles/index.module.scss";
 import Admax from "./component/admax";
-import json from "../countries.json";
 
 const Index: NextPage = () => {
   return (
@@ -20,9 +19,9 @@ const Index: NextPage = () => {
           <hr style={{ background: "black" }} />
           <div className={mainClass.siteIntroduction}>
             <img
-              src={`${
-                json.url === "localhost" ? "" : json.url
-              }/image/globe.png`}
+              src={
+                "https://sugoruru.github.io/country-flags-set/image/globe.png"
+              }
               alt=""
             />
             <p>
@@ -35,9 +34,7 @@ const Index: NextPage = () => {
           </div>
           <div className={mainClass.searchExplanation}>
             <img
-              src={`${
-                json.url === "localhost" ? "" : json.url
-              }/image/search.png`}
+              src="https://sugoruru.github.io/country-flags-set/image/search.png"
               alt="search"
             />
             <p>

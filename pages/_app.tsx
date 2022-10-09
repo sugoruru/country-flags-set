@@ -2,7 +2,6 @@ import { AppProps } from "next/dist/shared/lib/router/router";
 import React from "react";
 import Head from "next/head";
 import "../styles/global.scss";
-import json from "../countries.json";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
@@ -11,9 +10,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
         <title>set of country flags</title>
         <link
           rel="icon"
-          href={`${
-            json.url === "localhost" ? "" : json.url
-          }../image/favicon.png`}
+          href="https://sugoruru.github.io/country-flags-set/favicon.ico"
         />
       </Head>
       <Component {...pageProps} />

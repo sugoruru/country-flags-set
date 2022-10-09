@@ -23,9 +23,7 @@ const Index: NextPage = () => {
           </Link>
           <br />
           <img
-            src={`${
-              json.url === "localhost" ? "" : json.url
-            }/image/national flags/${router.query.name}.png`}
+            src={`https://sugoruru.github.io/country-flags-set/image/national flags/${router.query.name}.png`}
             alt=""
           />
           <p>

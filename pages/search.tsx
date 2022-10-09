@@ -21,9 +21,9 @@ const Index: NextPage = () => {
               <Link href={`/countries?name=${e.name}`} key={i}>
                 <div className={mainClass.listBox}>
                   <img
-                    src={`${
-                      json.url === "localhost" ? "" : json.url
-                    }/image/national flags/${decodeURI(e.name)}.png`}
+                    src={`https://sugoruru.github.io/country-flags-set/image/national flags/${decodeURI(
+                      e.name
+                    )}.png`}
                     alt=""
                   />
                   <span>{e.name}</span>
