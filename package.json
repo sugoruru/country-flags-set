@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "node server.mjs",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "node server.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "next export"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
@@ -32,6 +31,7 @@
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "sass": "^1.55.0",
+    "serve": "^14.0.1",
     "typescript": "4.8.4"
   }
 }
