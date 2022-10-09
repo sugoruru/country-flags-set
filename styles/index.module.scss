@@ -1,0 +1,169 @@
+.background {
+    z-index: -100;
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+}
+.header{
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+    background-color: #303e4f;
+    border-bottom: 1px solid #000;
+    span{
+        font-size: 25px;
+        line-height: 50px;
+        margin-left: 10px;
+        font-family: "titleFont";
+        font-weight: 700;
+        color: white;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.body{
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+    background-image:  radial-gradient(#81cdeb8c 2px, transparent 2px), radial-gradient(#81cdeb8c 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 60px;
+    background-color: #333;
+    color:white;
+    @media screen and (max-width: 767px) {
+        font-size: 30px;
+      }
+}
+.siteIntroduction{
+    display: flex;
+    line-height: 2vw;
+    font-size: 14px;
+    img{
+        width: 20vw;
+        height: 17vw;
+        @media screen and (max-width: 767px) {
+            width: 60vw;
+            height: 50vw;
+          }
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 13px;
+        display: block;
+        line-height: 8vw;
+      }
+      p{
+        padding: 10px;
+        margin: auto 0;
+        background-color: #fff;
+        border-radius: 10px;
+        border:1px solid #000;
+        text-decoration: underline;
+      }
+}
+.searchExplanation{
+    display: flex;
+    float: right;
+    img{
+        width: 20vw;
+        height: 17vw;
+        @media screen and (max-width: 767px) {
+            width: 60vw;
+            height: 50vw;
+          }
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 13px;
+        display: block;
+        line-height: 8vw;
+        float: none;
+      }
+      p{
+        padding: 10px;
+        margin: auto 0;
+        background-color: #fff;
+        border-radius: 10px;
+        border:1px solid #000;
+        text-decoration: underline;
+      }
+}
+.goToSearch{
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+    background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    &:hover{
+        cursor: pointer;
+        background-image: -webkit-gradient(linear, left top, right top, from(#fee140), to(#fa709a));
+        background-image: -webkit-linear-gradient(left, #fee140 0%, #fa709a 100%);
+        background-image: linear-gradient(to right, #fee140 0%, #fa709a 100%);
+    }
+}
+.goToSearchDiv{
+    background-image:  radial-gradient(#81cdeb8c 2px, transparent 2px), radial-gradient(#81cdeb8c 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    text-align: center;
+}
+.listBox{
+    width: calc(100vw - 5px);
+    height: 50px;
+    background-color: #d8e9f9;
+    margin: 5px 0;
+    border-left: 5px solid #2d8fdd;
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 40px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    span{
+        font-size: 20px;
+        float: left;
+        line-height: 50px;
+        @media screen and (max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+}
+.profile{
+    text-align: center;
+    img{
+        width: 10vw;
+        border:1px solid #000;
+        @media screen and (max-width: 767px) {
+            width: 50vw;
+        }
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+}
+.footer{
+    background-color: #333;
+    height: 310px;
+    color: white;
+    font-size: 16px;
+    text-align:center;
+}

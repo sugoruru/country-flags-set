@@ -3,22 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.mjs",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git add .&&git commit -m \"commit\"&&git push gigalixir master"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.1",
+    "jquery": "^3.6.1",
+    "js-cookie": "^3.0.1",
     "next": "12.3.1",
+    "next-auth": "^4.12.3",
+    "next-seo": "^5.5.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "socket.io": "^4.5.2",
+    "socket.io-client": "^4.5.2"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/js-cookie": "^3.0.2",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "sass": "^1.55.0",
     "typescript": "4.8.4"
   }
 }

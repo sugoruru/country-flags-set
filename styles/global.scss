@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+@font-face {
+	font-family: 'titleFont';
+	src: url(/font/titleFont.ttf);
+}
