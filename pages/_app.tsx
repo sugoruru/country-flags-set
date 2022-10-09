@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     <>
       <Head>
         <title>set of country flags</title>
-        <link rel="icon" href="/image/favicon.png" />
+        <link rel="icon" href="../image/favicon.png" />
       </Head>
       <Component {...pageProps} />
     </>
