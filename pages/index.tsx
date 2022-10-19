@@ -53,7 +53,7 @@ const Index: NextPage = () => {
           </div>
         </Link>
         <div className={mainClass.footer}>
-          ※このサイトはwikiから国旗を取得しております
+          ※このサイトはWikipediaから国旗を取得しております
           <br />
           -PR-
           <Admax id="c8aacef804b9518a13c48e9ba552a669" />
