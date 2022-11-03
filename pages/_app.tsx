@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
           rel="icon"
           href="https://sugoruru.github.io/country-flags-set/favicon.ico"
         />
+        <meta name="google-site-verification" content="BVYBVn5DiBqPYOl5KjLgzz2h4VESfQqgQzCW0vZ_rr0" />
       </Head>
       <Component {...pageProps} />
     </>
